@@ -37,7 +37,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/tv_description" />
+        android:text="@string/tv_description"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:id="@+id/llSampleImage"
@@ -54,7 +55,8 @@
             android:adjustViewBounds="true"
             android:contentDescription="@null"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_meal_one" />
+            android:src="@drawable/img_meal_one"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/imgSampleTwo"
@@ -65,7 +67,8 @@
             android:adjustViewBounds="true"
             android:contentDescription="@null"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_meal_two" />
+            android:src="@drawable/img_meal_two"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/imgSampleThree"
@@ -74,7 +77,8 @@
             android:adjustViewBounds="true"
             android:contentDescription="@null"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_meal_three" />
+            android:src="@drawable/img_meal_three"
+            android:visibility="invisible" />
     </LinearLayout>
 
     <Button

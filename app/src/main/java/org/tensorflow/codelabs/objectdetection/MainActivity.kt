@@ -16,6 +16,7 @@
 
 package org.tensorflow.codelabs.objectdetection
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -99,6 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     Log.e(TAG, e.message.toString())
                 }
             }
+            /*
             R.id.imgSampleOne -> {
                 setViewAndDetect(getSampleImage(R.drawable.img_meal_one))
             }
@@ -107,7 +109,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.imgSampleThree -> {
                 setViewAndDetect(getSampleImage(R.drawable.img_meal_three))
-            }
+            }*/
         }
     }
 
@@ -119,7 +121,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         for ((i, obj) in results.withIndex()) {
             val box = obj.boundingBox
 
-            Log.d(TAG, "Detected object: ${i} ")
+            Log.d(TAG, "Detected object: $i ")
             Log.d(TAG, "  boundingBox: (${box.left}, ${box.top}) - (${box.right},${box.bottom})")
 
             for ((j, category) in obj.categories.withIndex()) {
@@ -230,16 +232,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     /**
-     * getSampleImage():
-     *      Get image form drawable and convert to bitmap.
-     */
-    private fun getSampleImage(drawable: Int): Bitmap {
-        return BitmapFactory.decodeResource(resources, drawable, BitmapFactory.Options().apply {
-            inMutable = true
-        })
-    }
-
-    /**
      * rotateImage():
      *     Decodes and crops the captured image from camera.
      */
@@ -256,6 +248,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      * createImageFile():
      *     Generates a temporary image file for the Camera app to write to.
      */
+    @SuppressLint("SimpleDateFormat")
     @Throws(IOException::class)
     private fun createImageFile(): File {
         // Create an image file name
