@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var tvPlaceholder: TextView
     private lateinit var currentPhotoPath: String
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -72,10 +73,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         imgSampleThree = findViewById(R.id.imgSampleThree)*/
         tvPlaceholder = findViewById(R.id.tvPlaceholder)
 
+
         captureImageFab.setOnClickListener(this)
         /*imgSampleOne.setOnClickListener(this)
         imgSampleTwo.setOnClickListener(this)
         imgSampleThree.setOnClickListener(this)*/
+
+
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -110,6 +115,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.imgSampleThree -> {
                 setViewAndDetect(getSampleImage(R.drawable.img_meal_three))
             }*/
+
         }
     }
 
@@ -337,6 +343,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             )
         }
         return outputBitmap
+    }
+
+    fun changeActivity(view: View) {
+        val intent: Intent = Intent(this,SettingsActivity::class.java)
+        startActivity(intent)
     }
 }
 

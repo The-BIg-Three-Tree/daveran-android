@@ -6,11 +6,18 @@
     android:orientation="vertical"
     tools:context="org.tensorflow.codelabs.objectdetection.MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_button"
+        android:id="@+id/changeActivity"
+        android:onClick="changeActivity">
+    </Button>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/tvDescription">
-
         <TextView
             android:id="@+id/tvPlaceholder"
             android:layout_width="match_parent"
@@ -27,6 +34,8 @@
             android:adjustViewBounds="true"
             android:contentDescription="@null"
             android:scaleType="fitCenter" />
+
+
     </FrameLayout>
 
     <TextView
