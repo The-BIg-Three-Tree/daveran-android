@@ -26,6 +26,8 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -61,6 +63,27 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var tvPlaceholder: TextView
     private lateinit var currentPhotoPath: String
 
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId)
+        {
+            R.id.setting ->
+            {
+                val intent = Intent(this,SettingsActivity::class.java)
+                startActivity(intent)
+            }
+            else ->
+            {
+
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -343,11 +366,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             )
         }
         return outputBitmap
-    }
-
-    fun changeActivity(view: View) {
-        val intent: Intent = Intent(this,SettingsActivity::class.java)
-        startActivity(intent)
     }
 }
 
