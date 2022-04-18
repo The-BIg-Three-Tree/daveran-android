@@ -74,8 +74,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         {
             R.id.setting ->
             {
-                val intent = Intent(this,SettingsActivity::class.java)
-                startActivity(intent)
+                //val intent = Intent(this,SettingsActivity::class.java)
+                startActivity(Intent(this,SettingsActivity::class.java))
             }
             else ->
             {

@@ -18,5 +18,6 @@
     <string name="sus_title">Sus mode</string>
     <string name="attachment_summary_on">Does nothing.Like you.</string>
     <string name="attachment_summary_off">Turn on ඞ mode</string>
+    <string name="setting">setting</string>
 
 </resources>
