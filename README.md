@@ -1,5 +1,9 @@
 # What is this project about?
-A mobil application that recognize your hand sign with a meaning. 
+A mobil application that recognize your hand sign with a meaning.
+
+<img width=200px src="https://user-images.githubusercontent.com/46134377/164025781-a41895df-7bab-47e8-b5eb-de9b7a6a8446.png"> <img width=200px src="https://user-images.githubusercontent.com/46134377/164025925-e87a87f0-a879-4bc9-8a38-4e1663eb1184.png">
+
+
 
 ### What dependency does this project uses?
 
