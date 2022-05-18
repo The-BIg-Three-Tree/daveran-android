@@ -24,3 +24,11 @@ org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30
 ### Class diagram
 
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/46134377/164023431-67107ee2-04c8-4fe4-a6af-73841211c457.png)
+
+## Használt eszközök:
+
+|   Mire    |                                                                                Mit                                                                                 |                 Link                 |
+| :-------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------: |
+| UI  |  <a href="https://www.android.com/"> <img width=50px src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg"></a>   |  [Android](https://www.android.com/)   |
+|  Model  |   <a href= "https://www.tensorflow.org/"> <img width=50px src="https://www.tensorflow.org/images/tf_logo_social.png"></a>    | [TensorFlow](https://www.tensorflow.org/) |
+
